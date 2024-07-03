@@ -1,0 +1,76 @@
+.game-wrapper {
+  background-image: url("../images/bg-pentagon.svg");
+  background-repeat: no-repeat;
+  display: grid;
+  background-position: center;
+  background-size: contain;
+  grid-template-areas: 
+  "scissors scissors"
+  "spock paper"
+  "lizard rock";
+  align-content: center;
+  margin-top: 10vh;
+  margin-bottom: 10vh;
+  height: 50vh;
+  width: 50vh;
+  margin-inline: auto;
+}
+
+
+.rock-button {
+  grid-area: rock;
+  margin-top: 10vh;
+  margin-left: 13vh;
+  background: linear-gradient(var(--light-text), var(--light-text)) padding-box,
+    linear-gradient(to bottom, var(--rock-gradient)) border-box;
+  border-width: 2vh;
+}
+
+
+.paper-button {
+  grid-area: paper;
+  margin-left: 22vh;
+  margin-top: -5vh;
+  background: linear-gradient(var(--light-text), var(--light-text)) padding-box,
+    linear-gradient(to bottom, var(--paper-gradient)) border-box;
+  border-width: 2vh;
+}
+
+.scissors-button {
+  grid-area: scissors;
+  margin-left: 17vh;
+  margin-top: 0vh;
+  margin-bottom: 10vh;
+  background: linear-gradient(var(--light-text), var(--light-text)) padding-box,
+    linear-gradient(to bottom, var(--scissors-gradient)) border-box;
+  border-width: 2vh;
+}
+
+.lizard-button {
+  grid-area: lizard;
+  margin-top: 10vh;
+  margin-left: 3vh;
+  background: linear-gradient(var(--light-text), var(--light-text)) padding-box,
+    linear-gradient(to bottom, var(--lizard-gradient)) border-box;
+  border-width: 2vh;
+}
+
+.spock-button {
+  grid-area: spock;
+  margin-top: -5vh;
+  margin-left: -5vh;
+  background: linear-gradient(var(--light-text), var(--light-text)) padding-box,
+    linear-gradient(to bottom, var(--spock-gradient)) border-box;
+  border-width: 2vh;
+}
+
+.action-icon {
+  height: 5vh; 
+}
+
+.action-circle {
+  width: 15vh;
+  height: 15vh;
+  border-radius: 8vh;
+  border-color: transparent;
+}
