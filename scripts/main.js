@@ -12,7 +12,7 @@ document.querySelectorAll('.js-game-button')
         <figure class="you-picked-figure">
           <label class="you-picked-label">You picked</label>
           <button class="you-picked-button ${type}-button-big action-circle-big">
-            <img class="action-icon-big" src="/images/icon-${type}.svg">
+            <img class="action-icon-big" src="./images/icon-${type}.svg">
           </button>
         </figure>
       </div>
@@ -31,7 +31,7 @@ document.querySelectorAll('.js-game-button')
         housePickedButton.classList.remove('waiting-circle');
         housePickedButton.classList.add('action-circle-big');
         housePickedButton.classList.add(`${computerType}-button-big`);
-        housePickedButton.innerHTML = `<img class="action-icon-big" src="/images/icon-${computerType}.svg">`
+        housePickedButton.innerHTML = `<img class="action-icon-big" src="./images/icon-${computerType}.svg">`
         setTimeout(() => {
           const result = getResult(type, computerType);
         document.querySelector('.js-result').innerHTML = `
