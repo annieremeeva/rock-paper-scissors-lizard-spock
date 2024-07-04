@@ -1,3 +1,7 @@
+let score = Number(JSON.parse(localStorage.getItem('score'))) || 0;
+const scoreCount = document.querySelector('.score-count');  
+
+scoreCount.innerHTML = score;
 document.querySelectorAll('.js-game-button')
   .forEach((button) => {
     button.addEventListener('click', () => {
@@ -22,7 +26,6 @@ document.querySelectorAll('.js-game-button')
       </div>
       `
       setTimeout(() => {
-        console.log(1);
         const computerType = getRandomMove();
         const housePickedButton = document.querySelector('.js-house-picked-button');
         housePickedButton.classList.remove('waiting-circle');
@@ -37,6 +40,7 @@ document.querySelectorAll('.js-game-button')
             Play again
           </button>
         `
+        updateScore(result);
         document.querySelector('.js-play-again-button')
           .addEventListener('click', () => {
             document.querySelector('.game-wrapper').style.display = 'grid';
@@ -81,3 +85,40 @@ function getResult(type, computerType) {
     return 'You lose';
   }
 }
+
+function updateScore(result) {
+  switch (result) {
+    case 'You win':
+      score++;
+      break;
+    case 'You lose':
+      score--;
+      break;
+    case 'Draw':
+      break;
+  }
+
+  scoreCount.innerHTML = score;
+  localStorage.setItem('score', JSON.stringify(score));
+  
+}
+
+const resetScoreButton = document.querySelector('.js-reset-score-button');
+
+resetScoreButton.addEventListener('click', () => {
+  score = 0;
+  scoreCount.innerHTML = score;
+  localStorage.removeItem('score');
+});
+
+const rulesButton = document.querySelector('.js-rules-button');
+const rules = document.querySelector('.js-rules-dialog');
+const closeRules = document.querySelector('.js-close-rules-button');
+
+rulesButton.addEventListener('click', () => {
+  rules.style.display = 'flex';
+});
+
+closeRules.addEventListener('click', () => {
+  rules.style.display = 'none';
+})

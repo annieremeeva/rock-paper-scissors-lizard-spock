@@ -18,7 +18,7 @@
     </h1>
     <div class="score-box">
       <label class="score-label">Score</label>
-      <p class="score-count">12</p>
+      <p class="score-count"></p>
     </div>
   </header>
 
@@ -44,20 +44,21 @@
     <section class="result-wrapper">
       
     </section>
-    <dialog class="rules-dialog">
+    <div class="js-rules-dialog rules-dialog">
       <div class="rules-header">
         <label class="rules-label">Rules</label>
-        <button class="close-rules-button">
+        <button class="js-close-rules-button close-rules-button">
           <img src="images/icon-close.svg">
         </button>
       </div>
-      <img src="images/image-rules-bonus.svg">
-    </dialog>
+      <img class="rules-picture" src="images/image-rules-bonus.svg">
+    </div>
   </main>
   <footer>
-    <button class="reset-score-button">Reset score</button>
-    <button class="rules-button">Rules</button>
+    <button class="js-reset-score-button reset-score-button">Reset score</button>
+    <button class="js-rules-button rules-button">Rules</button>
   </footer>
+  
   <script type="module" src="/scripts/main.js"></script>
 </body>
 </html>
