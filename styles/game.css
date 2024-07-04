@@ -11,8 +11,8 @@
   align-content: center;
   margin-top: 10vh;
   margin-bottom: 10vh;
-  height: 50vh;
-  width: 50vh;
+  height: 45vh;
+  width: 45vh;
   margin-inline: auto;
 }
 
@@ -23,7 +23,7 @@
   margin-left: 13vh;
   background: linear-gradient(var(--light-text), var(--light-text)) padding-box,
     linear-gradient(to bottom, var(--rock-gradient)) border-box;
-  border-width: 2vh;
+  border-width: 1.5vh;
 }
 
 
@@ -33,7 +33,7 @@
   margin-top: -5vh;
   background: linear-gradient(var(--light-text), var(--light-text)) padding-box,
     linear-gradient(to bottom, var(--paper-gradient)) border-box;
-  border-width: 2vh;
+  border-width: 1.5vh;
 }
 
 .scissors-button {
@@ -43,7 +43,7 @@
   margin-bottom: 10vh;
   background: linear-gradient(var(--light-text), var(--light-text)) padding-box,
     linear-gradient(to bottom, var(--scissors-gradient)) border-box;
-  border-width: 2vh;
+  border-width: 1.5vh;
 }
 
 .lizard-button {
@@ -52,7 +52,7 @@
   margin-left: 3vh;
   background: linear-gradient(var(--light-text), var(--light-text)) padding-box,
     linear-gradient(to bottom, var(--lizard-gradient)) border-box;
-  border-width: 2vh;
+  border-width: 1.5vh;
 }
 
 .spock-button {
@@ -61,7 +61,7 @@
   margin-left: -5vh;
   background: linear-gradient(var(--light-text), var(--light-text)) padding-box,
     linear-gradient(to bottom, var(--spock-gradient)) border-box;
-  border-width: 2vh;
+  border-width: 1.5vh;
 }
 
 .action-icon {
@@ -69,8 +69,8 @@
 }
 
 .action-circle {
-  width: 15vh;
-  height: 15vh;
+  width: 12vh;
+  height: 12vh;
   border-radius: 8vh;
   border-color: transparent;
 }

@@ -3,6 +3,8 @@
 
 @import "game.css";
 
+@import "result.css";
+
 * {
   margin: 0;
   box-sizing: border-box;
@@ -25,10 +27,12 @@
 }
 
 body {
-  background-image: linear-gradient(var(--background-gradient));
+  background-image: radial-gradient(circle at top, var(--background-gradient));
   background-repeat: no-repeat;
   background-size: cover;
   font-size: 3vw;
+  height: 97vh;
+  position: relative;
 }
 
 header {
@@ -37,7 +41,7 @@ header {
   border: 0.1rem solid var(--header-outline);
   border-radius: 0.5rem;
   margin-top: 3vh;
-  margin-inline: 10vw;
+  margin-inline: 5vw;
   padding: 1.5vw;
 }
 
@@ -54,11 +58,11 @@ h1 {
   display: flex;
   flex-direction: column;
   background-color: var(--light-text);
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
   padding: 1vw 4vw;
   font-weight: 700;
-  border-radius: 1vw;
+  border-radius: 0.4rem;
 }
 
 .score-label {
@@ -75,9 +79,9 @@ h1 {
 
 button {
   background-color: transparent;
-  border: 0.2vw solid var(--header-outline);
+  border: 0.3vh solid var(--header-outline);
   color: var(--light-text);
-  border-radius: 0.6vw;
+  border-radius: 0.6vh;
   cursor: pointer;
 }
 
@@ -85,4 +89,37 @@ dialog:modal {
   width: 100vw;
   height: 100vh;
   border: none;
+}
+
+@media screen and (min-width: 860px) {
+  header {
+    margin-inline: 15vw;
+
+  }
+
+  h1 {
+    font-size: 2vw;
+  }
+
+  .score-label {
+    font-size: 1.5vw;
+  }
+
+  .score-count {
+    font-size: 4.5vw;
+  }
+
+  .score-box {
+    padding: 0.1vw 3vw;
+  }
+}
+
+footer {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  margin-inline: 5vw;
+  bottom: 5vh;
+  left: 5vh;
+  right: 5vh;
 }

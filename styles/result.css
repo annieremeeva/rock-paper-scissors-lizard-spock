@@ -1,0 +1,110 @@
+.result-wrapper {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  margin-inline: 10vw;
+  column-gap: 2vw;
+  margin-top: 20vh;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: var(--light-text);
+}
+
+.you-picked-figure {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.house-picked-figure {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.result {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2vh;
+  top: 30vh;
+  left: 20vw;
+  right: 20vw;
+  justify-content: space-between;
+}
+
+.result-label {
+  font-size: 5vw;
+}
+
+.play-again-button {
+  border: none;
+  background-color: var(--light-text);
+  color: var(--dark-text);
+  font-weight: 700;
+  padding: 1vh 3vw
+}
+
+.rock-button-big {
+  background: linear-gradient(var(--light-text), var(--light-text)) padding-box,
+    linear-gradient(to bottom, var(--rock-gradient)) border-box;
+  border-width: 2vh;
+}
+
+
+.paper-button-big {
+  background: linear-gradient(var(--light-text), var(--light-text)) padding-box,
+    linear-gradient(to bottom, var(--paper-gradient)) border-box;
+  border-width: 2vh;
+}
+
+.scissors-button-big {
+  background: linear-gradient(var(--light-text), var(--light-text)) padding-box,
+    linear-gradient(to bottom, var(--scissors-gradient)) border-box;
+  border-width: 2vh;
+}
+
+.lizard-button-big {
+  background: linear-gradient(var(--light-text), var(--light-text)) padding-box,
+    linear-gradient(to bottom, var(--lizard-gradient)) border-box;
+  border-width: 2vh;
+}
+
+.spock-button-big {
+  background: linear-gradient(var(--light-text), var(--light-text)) padding-box,
+    linear-gradient(to bottom, var(--spock-gradient)) border-box;
+  border-width: 2vh;
+}
+
+.action-icon-big {
+  height: 7vh; 
+}
+
+.action-circle-big {
+  margin-top: 5vh;
+  width: 17vh;
+  height: 17vh;
+  border-radius: 9vh;
+  border-color: transparent;
+}
+
+.waiting-circle {
+  background-color: hsla(0, 0%, 0%, 0.17);
+  width: 13vh;
+  height: 13vh;
+  margin-top: 7vh;
+  border: none;
+  border-radius: 7vh;
+}
+
+@media screen and (min-width: 860px) {
+  .result {
+    top: 5vh;
+  }
+}
+
+.result-hidden {
+  display: none;
+}

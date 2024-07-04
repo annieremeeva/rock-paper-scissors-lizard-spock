@@ -25,39 +25,24 @@
   <main>
     <section class="game-wrapper">
       <div></div>
-      <button class="scissors-button action-circle">
+      <button class="js-game-button scissors-button action-circle" data-type="scissors">
         <img class="action-icon" src="/images/icon-scissors.svg">
       </button>
-      <button class="paper-button action-circle">
+      <button class="js-game-button paper-button action-circle" data-type="paper">
         <img class="action-icon" src="/images/icon-paper.svg">
       </button>
-      <button class="spock-button action-circle">
+      <button class="js-game-button spock-button action-circle" data-type="spock">
         <img class="action-icon" src="/images/icon-spock.svg">
       </button>
-      <button class="lizard-button action-circle">
+      <button class="js-game-button lizard-button action-circle" data-type="lizard">
         <img class="action-icon" src="/images/icon-lizard.svg">
       </button>
-      <button class="rock-button action-circle">
+      <button class="js-game-button rock-button action-circle" data-type="rock">
         <img class="action-icon" src="/images/icon-rock.svg">
       </button>
     </section>
     <section class="result-wrapper">
-      <div class="you-picked">
-        <figure class="you-picked-figure">
-          <label class="you-picked-label">You picked</label>
-          <button class="you-picked-button"></button>
-        </figure>
-      </div>
-      <div class="result">
-        <label class="result-label"></label>
-        <button class="play-again-button">Play again</button>
-      </div>
-      <div class="house-picked">
-        <figure class="house-picked-figure">
-          <label class="house-picked-label">House picked</label>
-          <button class="house-picked-button"></button>
-        </figure>
-      </div>
+      
     </section>
     <dialog class="rules-dialog">
       <div class="rules-header">
@@ -73,5 +58,6 @@
     <button class="reset-score-button">Reset score</button>
     <button class="rules-button">Rules</button>
   </footer>
+  <script type="module" src="/scripts/main.js"></script>
 </body>
 </html>
